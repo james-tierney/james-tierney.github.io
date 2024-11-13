@@ -1,0 +1,54 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    /* Set the background color to white */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    /* Remove the border */
+    border-bottom: 2px solid #ccc;
+    /* Add a bottom border */
+    border-radius: 0;
+    /* Remove border radius */
+    outline: none;
+    /* Remove outline when focused */
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 2px solid #2B7A6E;
+    /* Change bottom border color on focus */
+}
+
+.submit-btn {
+    background-color: #2B7A6E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #24685b;
+}

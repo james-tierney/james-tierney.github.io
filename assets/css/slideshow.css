@@ -1,0 +1,62 @@
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    color: black;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.controls {
+    position: relative;
+    margin-top: 20px;
+}
+
+.button-prev,
+.button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button-prev {
+    left: 0px;
+    /* Adjust as needed to position outside */
+}
+
+.button-next {
+    right: 0px;
+    /* Adjust as needed to position outside */
+}
+
+.button-prev:hover,
+.button-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

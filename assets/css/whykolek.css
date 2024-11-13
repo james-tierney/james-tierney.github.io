@@ -1,0 +1,78 @@
+.why-choose-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.benefit {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.icon-square {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-purple {
+    width: 20px;
+    height: 20px;
+    background-color: #2B7A6E;
+    /* Purple color */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Center the third benefit beneath the first two */
+.benefits-grid .benefit:nth-child(3) {
+    grid-column: 1 / -1;
+    /* Span across both columns */
+    justify-self: center;
+    /* Center the third item */
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
