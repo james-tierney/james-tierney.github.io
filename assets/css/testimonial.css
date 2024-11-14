@@ -1,0 +1,78 @@
+/* Carousel container */
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Individual testimonial slide */
+.testimonial-slide {
+    display: none;
+    /* Hide all slides by default */
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 400px;
+    text-align: center;
+}
+
+.testimonial-slide.active {
+    display: block;
+    /* Show only the active slide */
+}
+
+.testimonial-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 32px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.author-designation {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Carousel buttons */
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+}
+
+.carousel-btn:hover {
+    color: #ff69b4;
+    /* Change color on hover */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
