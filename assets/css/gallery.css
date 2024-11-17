@@ -1,0 +1,40 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 items per row */
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+    /* Center the grid if it doesn't fill the row */
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    /* Center the image inside the item */
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    /* Ensure image is responsive */
+    max-height: 150px;
+    /* Set consistent height */
+    border-radius: 8px;
+    object-fit: contain;
+    /* Preserve aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* 1 item per row on phones */
+    }
+}
