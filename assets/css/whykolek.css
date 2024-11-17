@@ -14,7 +14,9 @@
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* Creates 2 columns */
     gap: 40px;
+    /* Adjusts spacing between items */
 }
 
 .benefit {
@@ -63,16 +65,17 @@
     color: #666;
 }
 
-/* Center the third benefit beneath the first two */
+/* Remove the centering of the third benefit */
 .benefits-grid .benefit:nth-child(3) {
-    grid-column: 1 / -1;
-    /* Span across both columns */
-    justify-self: center;
-    /* Center the third item */
+    grid-column: auto;
+    /* Default positioning in the grid */
+    justify-self: auto;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .benefits-grid {
         grid-template-columns: 1fr;
+        /* Revert to a single-column layout */
     }
 }

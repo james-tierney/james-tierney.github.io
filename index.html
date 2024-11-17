@@ -29,7 +29,28 @@
     <link rel="stylesheet" href="assets/css/testimonial.css"/>
 <!-- Internal CSS for styling -->
 
-<style></style>
+<style>
+.ud-footer-bottom .row {
+  display: flex; /* Use flexbox for even distribution */
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Distribute the items evenly */
+}
+
+.ud-footer-bottom-left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.footer-address {
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+
+</style>
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -241,6 +262,19 @@
             navigate the sourcing and distribution landscape. From market insights to logistics support, we are committed to
             being a reliable partner in our retailers' success.</p>
         </div>
+
+        <div class="benefit">
+          <div class="icon-box">
+            <div class="icon-square">
+              <div class="icon-purple"></div>
+            </div>
+          </div>
+          <h3>Flexible Inventory Solutions</h3>
+          <p>We offer flexible inventory solutions to accommodate the changing needs of independent retailers. Our approach allows
+            retailers to adjust their stock levels without long-term
+            commitments, ensuring they have the right products at the right time without the burden of excess inventory.</p>
+        </div>
+
       </div>
     </section>
 
@@ -496,35 +530,37 @@
 
 
 
-      <div class="ud-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                <li>
-                  <a href="#" onclick="openPrivacyPolicy()">Privacy policy</a>
-                </li>
-                <li>
-                  <a href="#" onclick="openTermsOfService()">Terms of service</a>
-                </li>
-                <li>
-                  <p style="color: black; margin-left: 80px;"><b>Office Address: </b>
-                  5 South Charlotte Street
-                  Edinburgh
-                  EH2 4AN</p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p class="ud-footer-bottom-right">
-                Designed and Developed by
-                <a href="https://jtierney-techh.netlify.app/"  rel="nofollow">JTierney Tech</a>
-              </p>
-            </div>
-          </div>
-        </div>
+<div class="ud-footer-bottom">
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-md-auto">
+        <ul class="ud-footer-bottom-left list-unstyled d-flex">
+          <li style="margin-right: 20px;">
+            <a href="#" onclick="openPrivacyPolicy()">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#" onclick="openTermsOfService()">Terms of service</a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div class="col-md-auto text-center">
+        <p class="footer-address">
+          5 South Charlotte Street
+          Edinburgh
+          EH2 4AN
+        </p>
+      </div>
+      <div class="col-md-auto">
+        <p class="ud-footer-bottom-right">
+          Designed and Developed by
+          <a href="https://jtierney-techh.netlify.app/" rel="nofollow">JTierney Tech</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- ====== Footer End ====== -->
 
     <!-- ====== Back To Top Start ====== -->
