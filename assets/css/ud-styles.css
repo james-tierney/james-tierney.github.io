@@ -22,7 +22,15 @@
   --white: #2B7A6E;
 }
 
+/* Hide shapes 1 and 2 on mobile */
+@media (max-width: 768px) {
 
+  .shape.shape-1,
+  .shape.shape-2 {
+    display: none;
+    /* Hides shapes 1 and 2 */
+  }
+}
 
 .ud-about-content-wrapper {
   flex: 1; /* Take up 50% of the container */
