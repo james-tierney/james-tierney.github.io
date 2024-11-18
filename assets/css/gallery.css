@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* 4 items per row */
-    gap: 20px;
-    /* Space between items */
+    gap: 40px;
+    /* Space between items (both horizontal and vertical) */
     justify-content: center;
     /* Center the grid if it doesn't fill the row */
 }
@@ -29,6 +29,8 @@
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         /* 2 items per row on tablets */
+        gap: 30px;
+        /* Space between items */
     }
 }
 
@@ -36,5 +38,9 @@
     .gallery-grid {
         grid-template-columns: 1fr;
         /* 1 item per row on phones */
+        row-gap: 50px;
+        /* Increased vertical spacing between items */
+        column-gap: 20px;
+        /* Horizontal spacing remains smaller */
     }
 }
