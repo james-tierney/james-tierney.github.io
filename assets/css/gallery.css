@@ -1,46 +1,63 @@
+/* Ensure the heading stays centered and doesn't wrap */
+#image-gallery h2 {
+    text-align: center;
+    /* font-size: 2rem; */
+    /* Default size for larger screens */
+    margin-bottom: 30px;
+    white-space: nowrap;
+    /* Prevent wrapping of text */
+}
+
+/* Adjust heading size for tablets */
+@media (max-width: 768px) {
+    #image-gallery h2 {
+        font-size: 1.5rem;
+        /* Smaller font size on tablets */
+    }
+}
+
+/* Further reduce font size for mobile */
+@media (max-width: 480px) {
+    #image-gallery h2 {
+        font-size: 2.0rem;
+        margin-left: -2.2rem;
+        /* Even smaller on phones */
+    }
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 items per row */
     gap: 40px;
-    /* Space between items (both horizontal and vertical) */
     justify-content: center;
-    /* Center the grid if it doesn't fill the row */
 }
 
 .gallery-item {
     display: flex;
     justify-content: center;
-    /* Center the image inside the item */
     align-items: center;
 }
 
 .gallery-item img {
     max-width: 100%;
-    /* Ensure image is responsive */
     max-height: 150px;
-    /* Set consistent height */
     border-radius: 8px;
     object-fit: contain;
-    /* Preserve aspect ratio */
 }
 
+/* For tablets */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 items per row on tablets */
         gap: 30px;
-        /* Space between items */
     }
 }
 
+/* For mobile */
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
-        /* 1 item per row on phones */
         row-gap: 50px;
-        /* Increased vertical spacing between items */
         column-gap: 20px;
-        /* Horizontal spacing remains smaller */
     }
 }
