@@ -31,18 +31,31 @@
 <!-- Internal CSS for styling -->
 
 <style>
-.ud-footer-bottom .row {
-  display: flex; /* Use flexbox for even distribution */
-  align-items: center; /* Align items vertically centered */
-  justify-content: space-between; /* Distribute the items evenly */
+@media (max-width: 767px) {
+  /* Override .ud-footer-bottom .row for small screens */
+  .ud-footer-bottom .row {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items */
+
+  }
+
+
+  
+
+  /* Adjust footer-left alignment for smaller screens */
+  .ud-footer-bottom-left {
+    justify-content: center; /* Center-align links */
+    margin-bottom: 10px;    /* Add spacing below for better layout */
+  }
+
+  /* Center-align address and phone details */
+  .footer-address,
+  .footer-phone {
+    text-align: center;
+    margin: 5px 0; /* Add spacing between elements */
+  }
 }
 
-.ud-footer-bottom-left {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-}
 
 .footer-address {
   margin: 0;
@@ -545,7 +558,7 @@
             5 South Charlotte Street, Edinburgh, EH2 4AN
           </p>
           <p class="footer-phone mb-0" style="color: white;">
-            Phone: <a href="tel:01312100234"  style="color: black;">01312100234</a>
+           <a href="tel:01312100234"  style="color: black;">01312100234</a>
           </p>
         </div>
       </div>
